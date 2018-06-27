@@ -8,6 +8,7 @@ verify_ssl = true
 [packages]
 "psycopg2" = "==2.7.5"
 Flask = "==1.0.2"
+requests = "*"
 
 [requires]
 python_version = "3.5"

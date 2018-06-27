@@ -33,6 +33,7 @@ def create_default_table(cursor):
 
 if __name__ == '__main__':
     DATABASE_URL = os.environ['DATABASE_URL']
+    print(DATABASE_URL)
     conn = psycopg2.connect(DATABASE_URL, sslmode='require')
     cur = conn.cursor()
 
