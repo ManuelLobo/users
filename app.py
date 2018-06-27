@@ -3,7 +3,8 @@ from flask import Flask, jsonify
 from helper_db import get_users, get_user_by_id
 
 app = Flask(__name__)
-
+port = int(os.environ.get('PORT', 5000))
+app.run(host='0.0.0.0', port=port)
 #conn = psycopg2.connect(host="localhost",database="post_db", user="postgres", password="post123")
 #cur = conn.cursor()
 
