@@ -1,11 +1,11 @@
-import psycopg2
+#import psycopg2
 from flask import Flask, jsonify
 from helper_db import get_users, get_user_by_id
 
 app = Flask(__name__)
 
-conn = psycopg2.connect(host="localhost",database="post_db", user="postgres", password="post123")
-cur = conn.cursor()
+#conn = psycopg2.connect(host="localhost",database="post_db", user="postgres", password="post123")
+#cur = conn.cursor()
 
 
 @app.route('/')
