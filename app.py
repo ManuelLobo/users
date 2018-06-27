@@ -1,4 +1,4 @@
-#import psycopg2
+import psycopg2
 from flask import Flask, jsonify
 from helper_db import get_users, get_user_by_id
 import os
@@ -6,7 +6,9 @@ app = Flask(__name__)
 
 #conn = psycopg2.connect(host="localhost",database="post_db", user="postgres", password="post123")
 #cur = conn.cursor()
+DATABASE_URL = os.environ['DATABASE_URL']
 
+conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 
 @app.route('/')
 def hello_world():
