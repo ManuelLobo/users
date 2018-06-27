@@ -1,10 +1,9 @@
 #import psycopg2
 from flask import Flask, jsonify
 from helper_db import get_users, get_user_by_id
-
+import os
 app = Flask(__name__)
-port = int(os.environ.get('PORT', 5000))
-app.run(host='0.0.0.0', port=port)
+
 #conn = psycopg2.connect(host="localhost",database="post_db", user="postgres", password="post123")
 #cur = conn.cursor()
 
@@ -44,3 +43,6 @@ def show_user_profile(user_id):
 
 #cur.close()
 #conn.commit()
+if __name__ == '__main__':
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
