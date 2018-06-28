@@ -12,7 +12,6 @@ cur = conn.cursor()
 
 @app.route('/')
 def index():
-    #return 'User databse page!'
     return render_template("index.html")
 
 
