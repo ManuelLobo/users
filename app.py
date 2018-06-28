@@ -5,10 +5,11 @@ import os
 app = Flask(__name__)
 
 #conn = psycopg2.connect(host="localhost",database="post_db", user="postgres", password="post123")
-#cur = conn.cursor()
-#DATABASE_URL = os.environ['DATABASE_URL']
 
-#conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+DATABASE_URL = os.environ['DATABASE_URL']
+conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+cur = conn.cursor()
+print(cur)
 
 @app.route('/')
 def hello_world():
