@@ -26,7 +26,7 @@ def users():
         last_name = user[1]
         user_list.append({"first_name": first_name, "last_name": last_name})
 
-    return jsonify(d)
+    return jsonify(user_list)
 
 
 @app.route('/users/<user_id>')
