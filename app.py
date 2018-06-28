@@ -1,6 +1,6 @@
 import os
 import psycopg2
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template
 from helper_db import get_users, get_user_by_id
 
 app = Flask(__name__)
@@ -12,7 +12,8 @@ cur = conn.cursor()
 
 @app.route('/')
 def index():
-    return 'User databse page!'
+    return render_template("index.html")
+    #return 'User databse page!'
 
 
 @app.route('/users')
