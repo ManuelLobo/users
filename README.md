@@ -13,6 +13,9 @@ The app is deployed through Heroku: https://polar-ridge-13855.herokuapp.com/ (mi
 
 There are only 6 users in the database, so the user_id only goes from 1 to 6.
 
+### Additional information
+The scripts folder has the script that was used to prepare the data and insert it into the Postgres database.
+
 ### References
 - http://flask.pocoo.org/docs/0.12/quickstart/
 - https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-16-04
