@@ -1,5 +1,6 @@
 # User Retrieval Endpoint
 Retrieve user information in a Postgres database, using a Flask server.
+The information is retreived in a JSON format.
 
 ### Running
 To run the app, the flask server must be started. If run locally, the database connection settings must be changed in order to run.
