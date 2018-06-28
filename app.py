@@ -10,11 +10,11 @@ DATABASE_URL = os.environ['DATABASE_URL']
 conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 cur = conn.cursor()
 
-    
-@app.route('/<string:page_name>/')
-def index(page_name):
-    return render_template('%s.html' % page_name)
+@app.route('/')
+def index():
+    a = open("index.html")
     #return 'User databse page!'
+    return a
 
 
 @app.route('/users')
