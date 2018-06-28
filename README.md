@@ -14,9 +14,9 @@ The app is deployed through Heroku: https://polar-ridge-13855.herokuapp.com/ (mi
 There are only 6 users in the database, so the user_id only goes from 1 to 6.
 
 ### Additional information
-helper_db.py contains functions to retrieve information from the database.
-scripts/preparedb.py is the script that was used to prepare the data and insert it into the Postgres database.
-scripts/data.tsv contains the user information in a csv format to be written to the database.
+- helper_db.py contains functions to retrieve information from the database.
+- scripts/preparedb.py is the script that was used to prepare the data and insert it into the Postgres database.
+- scripts/data.tsv contains the user information in a csv format to be written to the database.
 
 ### References
 - http://flask.pocoo.org/docs/0.12/quickstart/
